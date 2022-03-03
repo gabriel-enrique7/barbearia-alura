@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produtos - Barbearia Alura</title>
+        <link href="../reset.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="container-menu">
+                
+                <h1>
+                    <a href="../index.html">
+                        <img src="imagens/logo.png">
+                    </a>
+                </h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="../contato/contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--END div container-->
+        </header><!--END header-->
+
+        <!--  -->
+        <main class="conteudo" role="main">
+            <section class="produtos">
+
+                <!--
+                Nas listas devemos evitar utilizar o list-style-type: circle, square ou decimal    
+                Pois pensando em acessibilidade isso seria mal interpretado pelos leitores de tela
+                O mais adequado é utilizar o list-style: none; tanto para o style e o postion;
+                -->
+
+                <!--
+                Não use display: none; e nem o visibility: hidden;
+                pois em quesitos de acessibilidade o NVDA não irá ler ou seja,
+                a melhor solução é usar um position: absolute; com o valor infinito (-9999px) para uma direção
+                e opacity: 0; para garantir que nõ irá aparecer.
+                -->
+
+                <ul class="lista-produtos">
+                    <li class="listaProdutos-item listaProdutos-item-cabelo">
+                        <h2>Cabelo</h2>
+                        <img src="imagens/cabelo.jpg" alt="Cabelo, ilustração">
+                        <p class="produtos-descricao">Na tesoura ou na máquina, como o cliente preferir</p>
+                        <p class="produtosPreco-cabelo">R$ 25,00</p>
+                    </li>
+                    <li class="listaProdutos-item listaProdutos-item-barba">
+                        <h2>Barba</h2>
+                        <img src="imagens/barba.jpg" alt="Barba, ilustração">
+                        <p class="produtos-descricao">Corte e desenho profissional de barba</p>
+                        <p class="produtosPreco-barba">R$ 18,00</p>
+                    </li>
+                    <li class="listaProdutos-item listaProdutos-item-promocao">
+                        <h2>Cabelo + Barba</h2>
+                        <img src="imagens/cabelo+barba.jpg" alt="Cabelo e Barba, ilustração">
+                        <p class="produtos-descricao">Pacote completo de cabelo e barba</p>
+                        <p class="produtosPreco-promocao">R$ 35,00</p>
+                    </li>
+                </ul>
+            </section>
+        </main><!--END main-->
+
+        <footer>
+            <img src="imagens/logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+        </footer><!--END footer-->
+    </body>
+
+</html>
